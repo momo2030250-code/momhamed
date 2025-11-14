@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي العصري</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #e0f7fa, #e8f5e9); color: #111827; }
+        @keyframes fadeSlide { 0% {opacity:0; transform: translateY(40px);} 100% {opacity:1; transform: translateY(0);} }
+        .fade-slide { animation: fadeSlide 1s ease forwards; }
+
+        nav { background-color: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border-radius: 1.5rem; padding: 0.5rem 2rem; }
+        nav a { color: #1d4ed8; font-weight: 600; transition: color 0.3s; padding: 0.5rem 1rem; border-radius: 0.75rem; }
+        nav a:hover { color: #fff; background-color: #2563eb; }
+
+        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero h2 { font-size: 4rem; background: linear-gradient(90deg,#2563eb,#22c55e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; color: #334155; max-width: 40rem; margin-bottom: 2rem; }
+        .hero a { background-color: #2563eb; color: #fff; padding: 0.75rem 2rem; border-radius: 1.5rem; font-weight: 700; transition: all 0.3s; }
+        .hero a:hover { background-color: #1d4ed8; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+        .project-card { background: #fff; border-radius: 1.5rem; padding: 2rem; box-shadow: 0 15px 25px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 25px 35px rgba(0,0,0,0.1); }
+
+        footer { text-align: center; padding: 2rem 1rem; color: #64748b; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar أفقي جانب بعض -->
+    <nav class="w-full flex justify-start items-center gap-6 fixed top-4 left-4 right-4 z-50 fade-slide">
+        <h1 class="text-2xl font-bold text-blue-600">Mohamed</h1>
+        <a href="#about">من أنا</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#contact">تواصل</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero fade-slide">
+        <h2>مرحباً! أنا محمد</h2>
+        <p>أصنع مواقع عصرية وجميلة بتصميم حديث وسلس، مع تأثيرات جذابة وحركة سلسة تشبه مواقع الشركات الكبرى.</p>
+        <a href="#projects">استكشف مشاريعي</a>
+        <img src="téléchargement.png" alt="">
+    </section>
+
+    <!-- About -->
+    <section id="about" class="fade-slide text-center px-8 py-24">
+        <h3 class="text-4xl font-bold mb-6">من أنا؟</h3>
+        <p class="text-xl max-w-2xl mx-auto leading-relaxed">
+            أنا محمد، مبرمج مواقع أحب التصميم العصري والتفاعلي. أعمل بـ HTML، CSS، JavaScript، وأحياناً Arduino. أسعى لتقديم تجربة مستخدم سلسة وجذابة.
+        </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="fade-slide text-center px-8 py-24">
+        <h3 class="text-4xl font-bold mb-14">مشاريعي</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="project-card">
+                <h4 class="text-2xl font-bold mb-2"> موقع تنظيم الوقت </h4>
+                <p> موقع تنظيم الوقت HTML/CSS/JS.</p>
+                 <a href="https://momo2030250-code.github.io/Timemanagement/">انقر هنا</a>
+                 <img src="screencapture-momo2030250-code-github-io-Timemanagement-2025-11-14-20_59_22.png" alt="">
+            </div>
+            <div class="project-card">
+                <h4 class="text-2xl font-bold mb-2">Arduino Light</h4>
+                <p>نظام يتحكم في الإضاءة باستخدام Arduino.</p>
+            </div>
+            <div class="project-card">
+                <h4 class="text-2xl font-bold mb-2">واجهة Chrome Style</h4>
+                <p>موقع يشبه تصميم Google Chrome العصري.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-slide text-center px-8 py-24">
+        <h3 class="text-4xl font-bold mb-6">تواصل معي</h3>
+        <p class="text-lg mb-6">يسعدني تواصلك معي عبر البريد التالي:</p>
+        <a href="momo2030250@gmail.com" class="text-2xl font-bold text-blue-600">example@mail.com</a>
+        <img src="contact.png" alt="">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Mohamed – تصميم عصري وحديث.
+    </footer>
+
+</body>
+</html>
